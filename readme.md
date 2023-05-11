@@ -37,7 +37,7 @@
 ### 步骤 3:
 
 将语义图发送到controlnet上 (Send to txt to image 按钮) ，然后启用controlnet，并选择 control_sd15_seg 作为 Model，选择none作为Preprocessor
-![image_con Image](./image_con.png) 
+![image_con Image](./image/image_con.png) 
 
 ### 步骤 4:
 
