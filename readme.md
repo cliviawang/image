@@ -5,25 +5,24 @@
 使用该插件，可以在一个页面内实现抠图，拼图，并且为Controlnet生成底图，传统的做法需要使用两至三个不同的软件，来回跳转，该工具大大简化了这个操作
 
 # 安装
-1：安装[ControlNet](https://github.com/Mikubill/sd-webui-controlnet)插件
+1：安装[ControlNet](https://github.com/Mikubill/sd-webui-controlnet)插件<br />
 2：将本插件下载到 ${sd-webui}/extensions 目录下
 
-使用前需要注意：
-首次使用插件需要重启 sd-webui 以安装rembg库，而不是重启UI。
+使用前需要注意：首次使用插件需要重启 sd-webui 以安装rembg库，而不是重启UI。
 
 # 可能出现的问题
-1：第一次使用时，如果你之前没有在ControlNet中使用过oneformer的模型，那么需要下载相应的模型才能使用，一般来说，如果没有模型，会自动下载
-2：如果下载模型时，出现问题，可以通过以下链接：https://pan.baidu.com/s/1fIwQ7f08uV3FjAPLbKbinQ?pwd=cso5 提取码：cso5 进行下载
-3：下载后，将downloads放入image-compositor/annotator文件夹下即可
-4：如果需要使用中文，请将chinese-all-0408.json放入stable-diffusion\localizations目录下，并在设置中启用它
+1：第一次使用时，如果你之前没有在ControlNet中使用过oneformer的模型，那么需要下载相应的模型才能使用，一般来说，如果没有模型，会自动下载<br />
+2：如果下载模型时，出现问题，可以通过以下链接：https://pan.baidu.com/s/1fIwQ7f08uV3FjAPLbKbinQ?pwd=cso5 提取码：cso5 进行下载<br />
+3：下载后，将downloads放入image-compositor/annotator文件夹下即可<br />
+4：如果需要使用中文，请将chinese-all-0408.json放入stable-diffusion\localizations目录下，并在设置中启用它<br />
 
 ## 使用方式
-本插件的大致使用流程为：
-1.搜集需要拼接的图片元素
-2.将需要拼接的元素放入画布
-3.将画布转化成语义图
-4.使用controlnet和语义图生成新的图片
-接下来详细说明每个步骤：
+本插件的大致使用流程为：<br />
+1.搜集需要拼接的图片元素<br />
+2.将需要拼接的元素放入画布<br /> 
+3.将画布转化成语义图<br />
+4.使用controlnet和语义图生成新的图片<br />
+接下来详细说明每个步骤：<br />
 
 ### 步骤 1:
 
